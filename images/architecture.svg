@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f8fbff"/><stop offset="1" stop-color="#edf4ff"/></linearGradient>
+ <style>
+ .title{font:700 30px Arial;fill:#142b45}.sub{font:16px Arial;fill:#50657d}.label{font:700 17px Arial;fill:#142b45}.small{font:14px Arial;fill:#405771}.tiny{font:12px Arial;fill:#52677d}
+ .card{fill:#fff;stroke:#b9cde2;stroke-width:2}.blue{fill:#edf7ff;stroke:#0078d4;stroke-width:2}.arrow{stroke:#34516f;stroke-width:3;fill:none;marker-end:url(#a)}
+ </style><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#34516f"/></marker>
+</defs>
+<rect width="1200" height="700" rx="20" fill="url(#bg)"/>
+<text x="42" y="52" class="title">Highly Available Web Application on Azure</text>
+<text x="42" y="82" class="sub">Course-end project • Azure Load Balancer • Virtual Machines • IIS • RBAC</text>
+<rect x="35" y="110" width="1130" height="535" rx="18" fill="#fff" stroke="#8db5dc" stroke-width="2"/>
+<text x="60" y="145" class="label">Azure Resource Group</text>
+<rect x="60" y="165" width="1080" height="450" rx="16" fill="#f8fbff" stroke="#0078d4" stroke-width="2" stroke-dasharray="8 6"/>
+<text x="82" y="196" class="label">Virtual Network (VNet)</text>
+<!-- users -->
+<circle cx="120" cy="320" r="17" fill="#dceeff" stroke="#0078d4" stroke-width="3"/><path d="M91 365 Q120 330 149 365" fill="#dceeff" stroke="#0078d4" stroke-width="3"/>
+<text x="120" y="395" text-anchor="middle" class="label">Users</text><text x="120" y="417" text-anchor="middle" class="small">HTTP requests</text>
+<!-- LB -->
+<rect x="195" y="260" width="220" height="160" rx="14" fill="#e5f3ff" stroke="#0078d4" stroke-width="2"/>
+<rect x="195" y="260" width="220" height="42" rx="14" fill="#0078d4"/>
+<text x="305" y="287" text-anchor="middle" style="font:700 16px Arial;fill:white">Azure Load Balancer</text>
+<text x="305" y="328" text-anchor="middle" class="small">Public frontend IP</text><text x="305" y="355" text-anchor="middle" class="small">Backend pool + rule</text><text x="305" y="382" text-anchor="middle" class="small">Health probe</text>
+<path d="M153 340 H190" class="arrow"/>
+<!-- Availability Set -->
+<rect x="465" y="210" width="630" height="340" rx="16" fill="#f1f8ff" stroke="#6fa4d5" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="490" y="240" class="label">Availability Set</text>
+<!-- VM cards -->
+<rect x="495" y="260" width="565" height="105" rx="12" class="blue"/>
+<rect x="515" y="280" width="60" height="60" rx="9" fill="#0078d4"/>
+<rect x="532" y="294" width="27" height="30" rx="3" fill="none" stroke="#fff" stroke-width="2.5"/>
+<path d="M525 300h7m-7 9h7m-7 9h7m27-18h7m-7 9h7m-7 9h7" stroke="#fff" stroke-width="2"/>
+<text x="595" y="291" class="label">Azure Virtual Machine 1</text><text x="595" y="318" class="small">IIS web server • Custom HTML page</text><text x="595" y="343" class="tiny">No direct public IP (per project description)</text>
+<rect x="495" y="390" width="565" height="105" rx="12" class="blue"/>
+<rect x="515" y="410" width="60" height="60" rx="9" fill="#0078d4"/>
+<rect x="532" y="424" width="27" height="30" rx="3" fill="none" stroke="#fff" stroke-width="2.5"/>
+<path d="M525 430h7m-7 9h7m-7 9h7m27-18h7m-7 9h7m-7 9h7" stroke="#fff" stroke-width="2"/>
+<text x="595" y="421" class="label">Azure Virtual Machine 2</text><text x="595" y="448" class="small">IIS web server • Custom HTML page</text><text x="595" y="473" class="tiny">No direct public IP (per project description)</text>
+<path d="M415 320 H450 V310 H490" class="arrow"/><path d="M450 320 V440 H490" class="arrow"/>
+<!-- probe box -->
+<rect x="195" y="465" width="220" height="100" rx="12" fill="#effbf4" stroke="#23965a" stroke-width="2"/>
+<text x="305" y="495" text-anchor="middle" class="label">Health Probe</text><text x="305" y="521" text-anchor="middle" class="small">Checks backend health</text><text x="305" y="544" text-anchor="middle" class="tiny">Conceptual association</text>
+<path d="M415 515 H450 V350 H490" stroke="#23965a" stroke-width="2" stroke-dasharray="6 5" fill="none"/>
+<path d="M450 515 V470 H490" stroke="#23965a" stroke-width="2" stroke-dasharray="6 5" fill="none"/>
+<!-- RBAC note -->
+<rect x="465" y="565" width="630" height="35" rx="9" fill="#fff7e6" stroke="#dfaa3d" stroke-width="1.5"/>
+<text x="780" y="587" text-anchor="middle" class="small">Custom Azure RBAC role limits Operations team permissions</text>
+<text x="40" y="675" class="tiny">Recreated conceptual diagram. Exact subnet ranges, VM sizes, and rule values were unavailable.</text>
+</svg>
