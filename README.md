@@ -2,8 +2,6 @@
 
 A course-end cloud project exploring how Azure Load Balancer can distribute incoming web traffic across two Azure Virtual Machines and route requests only to healthy backend instances.
 
-> **Documentation note:** The original deployment files and screenshots are no longer available. This repository documents the implementation described in my project description. The architecture image is a recreated conceptual diagram, not an exported screenshot from the Azure portal.
-
 ## Project goals
 
 - Deploy two Azure Virtual Machines in an Availability Set within a Virtual Network and Resource Group.
@@ -71,6 +69,4 @@ This repository contains documentation and a recreated diagram only. It does not
 └── docs/
     └── project-notes.md
 ```
-
-**Project type:** Course-end project  
 **Focus:** Azure networking, load balancing, virtual machines, IIS, health probes, and RBAC
